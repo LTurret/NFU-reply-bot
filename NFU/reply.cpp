@@ -62,8 +62,7 @@ int main()
         }
         if (answercounter == 8)
         {
-            answers.close();
-            answers.open("answers.dat", ios::in);
+            answers.seekg(ios_base::beg);
             answercounter = 0;
         }
     }
